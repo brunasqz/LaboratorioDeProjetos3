@@ -13,4 +13,4 @@ Engenharia de Sistemas, UFMG
 - [Notas de acompanhamento do projeto](acompanhamento)
 
 ## Documentação
-- [Acordo de expectativas do time](https://github.com/matheusaraujo/jornada-automacao-testes/raw/master/Acordo/Declaracao_expectativas_time.pdf)
+- [Acordo de expectativas do time](https://github.com/brunasqz/LaboratorioDeProjetos3/raw/master/Acordo/Declaracao_expectativas_time.pdf)

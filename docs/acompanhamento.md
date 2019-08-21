@@ -1,3 +1,16 @@
+## 2019-08-20
+- **Papéis**:
+  - Bruna, Verificadora
+  - Matheus, Coordenador
+  - Philippe, Relator
+- **Ações**:
+  - O grupo fez os mapas conceituais: geral e o de hardware
+  - Os mapas precisam de ajustes finais para serem enviados
+  - Definimos a parte de eletrônica (motor de passos e eletroímã)
+  - Estabelecemos itens da parte estrutural (mecânica)
+  - Separamos as futuras atividades no Trello
+  - Definimos materiais para serem comprados
+
 ## 2019-08-13
 - **Papéis**:
   - Bruna, Coordenadora

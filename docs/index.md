@@ -13,4 +13,6 @@ Engenharia de Sistemas, UFMG
 - [Notas de acompanhamento do projeto](acompanhamento)
 
 ## Documentação
+- [Mapa Geral](https://github.com/brunasqz/LaboratorioDeProjetos3/raw/master/Documentos/Mapa_geral%20-%20O%20que%20%C3%A9%20o%20Guindaste.jpg)
+- [Mapa Hardware](https://github.com/brunasqz/LaboratorioDeProjetos3/raw/master/Documentos/Mapa_hardware.jpg)
 - [Acordo de expectativas do time](https://github.com/brunasqz/LaboratorioDeProjetos3/raw/master/Acordo/Declaracao_expectativas_time.pdf)

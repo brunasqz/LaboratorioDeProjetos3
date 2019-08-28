@@ -1,7 +1,7 @@
 import tkinter
 import serial
 
-arduino = serial.Serial('com3', 9600)
+arduino = serial.Serial('com4', 9600)
 greenOn = False
 yellowOn = False
 redOn = False

@@ -1,5 +1,19 @@
 ## 2019-08-20
 - **Papéis**:
+  - Bruna, Relatora
+  - Matheus, Verificador 
+  - Philippe, Coordenador
+- **Ações**:
+  - O grupo fez os testes com o motor de passos
+  - Estabelecemos a estrutura física do guindaste
+  - Discutimos sobre a representação da parte estrutural no SketchUp
+  - Definimos as atividades para a próxima semana: 
+    - Bruna: avançar no desenho do guindaste no SketchUp;
+    - Phillipe: cálculos do circuito que aciona o eletroímã;
+    - Matheus: fazer o diagrama do protocolo de comunicação e software;
+
+## 2019-08-20
+- **Papéis**:
   - Bruna, Verificadora
   - Matheus, Coordenador
   - Philippe, Relator

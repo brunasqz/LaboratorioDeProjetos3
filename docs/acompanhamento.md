@@ -1,3 +1,15 @@
+## 2019-09-03
+- **Papéis**:
+  - Bruna, Coordenadora
+  - Matheus, Relator 
+  - Philippe, Verificador
+- **Ações**:
+  - Matheus: desenhos dos diagramas para o protocolo de comunicação
+  - Phillippe: cálculos e montagem do circuito para ativar o eletroímã
+  - Bruna: montando a estrutura física do guindaste junto com o desenho no SketchUp
+  - O grupo decidiu que na aula do dia 10/set será montado o Mapa Conceitual de software e a separação de atividades para escrever o relatório do protocolo de comunicação
+  - O grupo decidiu adiantar a estrutura do guindaste para as próximas semanas a fim de começar a fazer os testes do motor e do eletroímã com a estrutura
+
 ## 2019-08-20
 - **Papéis**:
   - Bruna, Relatora

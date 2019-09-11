@@ -1,3 +1,14 @@
+## 2019-09-10
+- **Papéis**
+  - Bruna, Verificadora
+  - Matheus, Coordenador
+  - Philippe, Relator
+- **Ações**
+  - Mapa conceitual do software foi feito
+  - Protocolo de comunicação foi definido
+  - O acionamento elétrico do eletroímã foi calculado e testado
+  - A torre do guindaste está pronta
+
 ## 2019-09-03
 - **Papéis**:
   - Bruna, Coordenadora

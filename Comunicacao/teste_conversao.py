@@ -19,7 +19,7 @@ def getPosfix(s):
 # motor lanca, 180 graus
 assert generateChar('10' + '010110100') == '0x1204'
 assert getPrefix(1204) == '0b10'
-assert getPosfix(1204) == '0b10110100'
+assert getPosfix(1204)'' == '0b10110100'
 
 # motor giro, 10 graus
 assert generateChar('11' + '000001010') == '0x1546'

@@ -1,3 +1,21 @@
+## 2019-09-17
+- **Papéis**:
+  - Bruna, Relatora 
+  - Philippe, Coordenador
+- **Ações**:
+    - Foram validados as pendências da última semana:
+        - Phillipe: concluiu o circuito de acionamento do eletroímã;
+        - Bruna: montou partes da estrutura da lança;
+    - Terminamos de montar outras partes da lança na sala de aula;
+    - Ficou pendente o término da lança pela falta do motor para medição da estrutura e seu acoplamento;
+    - Discutimos sobre as possibilidades de acoplamento dos motores com a estrutura;
+    - Ficou definido que para a aula seguinte será terminada a estrutura física a fim de começar os testes;
+    - Para seguir com o cronograma ficou definido que:
+        - Matheus: montará o software da interface gráfica;
+        - Philippe: auxiliará e discutirá com o Matheus a implementação das outras partes do software;
+        - Bruna: terminará a estrutura física e o SketchUp;
+        - Os 3 membros: escreverão o artigo/relatório para definir a interface gráfica e o protocolo de comunicação; 
+
 ## 2019-09-10
 - **Papéis**
   - Bruna, Verificadora

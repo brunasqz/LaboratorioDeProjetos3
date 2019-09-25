@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
-from tkinter import Tk, W, E, X, RAISED, StringVar, DISABLED, NORMAL
+from tkinter import Tk, W, E, X, RAISED, StringVar, DISABLED, NORMAL, PhotoImage
 from tkinter.ttk import Frame, Button, Entry, Style, Label
+import os
+
 
 class Screen(Frame):
     
@@ -55,7 +57,7 @@ class Screen(Frame):
 
     def initHeader(self, frame1):
         self.master.title("Lab3 - 201902 - Grupo B")
-
+        self.master.iconphoto(True, PhotoImage(file=os.path.abspath("./guindaste.png")))
         Style().configure("TButton", padding=(0, 5, 0, 5),
                           font='serif 10')
 
@@ -114,7 +116,6 @@ class Screen(Frame):
         self.boomVar.set(self.craneState.boomGrades)
         self.electromagnetVar.set('Ligado' if self.craneState.electromagnet else 'Desligado')
         stopped = self.craneState.state == 'stopped'
-        
         if (stopped):
             self.btnApplyBoom.config(state=NORMAL)
         else:

@@ -1,19 +1,22 @@
 #!/usr/bin/env python3
-
-from tkinter import Tk, W, E, X, RAISED, StringVar
+from tkinter import Tk, W, E, X, RAISED, StringVar, DISABLED, NORMAL
 from tkinter.ttk import Frame, Button, Entry, Style, Label
 
 class Screen(Frame):
     
     craneState = None
+    boomVar = None
     stateVar = None
-    electromagnetVar = None
+    electromagnetVar = None    
+    
+    btnApplyBoom = None
 
     def __init__(self, craneState):
         super().__init__()
         self.craneState = craneState        
         self.stateVar = StringVar(self)
-        self.electromagnetVar = StringVar(self)
+        self.boomVar = StringVar(self)
+        self.electromagnetVar = StringVar(self)        
         self.initUI()
     
     def initUI(self):
@@ -31,16 +34,8 @@ class Screen(Frame):
         frame1.rowconfigure(4, pad=3)
         
         self.initHeader(frame1)
-
-        labelBoom = Label(frame1, text="Braço")        
-        boom = Entry(frame1)
-        incBoom = Button(frame1, text="+1º")
-        decBoom = Button(frame1, text="-1º")
-        boom.configure(state='readonly')
-        labelBoom.grid(row=1, column=0)
-        boom.grid(row=2, column=0)
-        incBoom.grid(row=3, column=0)
-        decBoom.grid(row=4, column=0)
+        
+        self.initBoom(frame1)
 
         labelJib = Label(frame1, text="Lança")
         jib = Entry(frame1)
@@ -74,6 +69,20 @@ class Screen(Frame):
         labelState.grid(row=0, column=0)
         stateEntry.grid(row=0, column=1, columnspan=2, sticky=W+E)
 
+    def initBoom(self, frame1):
+        
+        def applyBoom():
+            self.craneState.setBoomGrades(int(self.boomVar.get()), self.setEntries)
+            #self.setEntries()
+        
+        labelBoom = Label(frame1, text="Braço")
+        boom = Entry(frame1, textvariable=self.boomVar)
+        self.btnApplyBoom = Button(frame1, text="Aplicar", command=applyBoom)
+        labelBoom.grid(row=1, column=0)
+        boom.grid(row=2, column=0)
+        self.btnApplyBoom.grid(row=3, column=0)
+    
+
 
     def initElectromagnet(self, frame1):      
         
@@ -102,4 +111,11 @@ class Screen(Frame):
         
     def setEntries(self):
         self.stateVar.set(self.craneState.state)
+        self.boomVar.set(self.craneState.boomGrades)
         self.electromagnetVar.set('Ligado' if self.craneState.electromagnet else 'Desligado')
+        stopped = self.craneState.state == 'stopped'
+        
+        if (stopped):
+            self.btnApplyBoom.config(state=NORMAL)
+        else:
+            self.btnApplyBoom.config(state=DISABLED)

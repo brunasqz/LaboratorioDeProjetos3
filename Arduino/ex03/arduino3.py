@@ -1,7 +1,7 @@
 import tkinter
 import serial
 
-arduino = serial.Serial('com4', 9600)
+arduino = serial.Serial('com5', 9600)
 
 top = tkinter.Tk()
 top.geometry("300x50")

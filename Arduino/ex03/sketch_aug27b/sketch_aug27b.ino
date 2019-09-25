@@ -11,7 +11,7 @@ Stepper stepper(stepsPerRevolution, 8, 10, 9, 11);
 void setup()
 {
   Serial.begin(9600);
-  stepper.setSpeed(60);
+  stepper.setSpeed(30);
 }
 
 void loop()

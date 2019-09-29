@@ -1,3 +1,20 @@
+## 2019-09-24
+- **Papéis**:
+  - Bruna, Coordenadora
+  - Matheus, Relator 
+  - Philippe, Verificador
+- **Ações**:
+    - Na aula, juntamos as partes do guindaste (lança e viga) para teste do motor que rotaciona a lança;
+    - Fizemos os testes com o motor acoplado na roda para movimentar a lança (com um contrapeso improvisado);
+    - Houve continuidade no modelo do SketchUp;
+    - Construção da integração da interface (software) com o arduíno;
+    - Consideramos que estamos andando no cronograma de acordo com o estipulado;
+    - Para a próxima aula:
+        - Continuação do modelo do SketchUp;
+        - Definição do conteúdo do relatório;
+        - Mudança na biblioteca de controle do motor para retorno de finalização do processo;
+
+    
 ## 2019-09-17
 - **Papéis**:
   - Bruna, Relatora 

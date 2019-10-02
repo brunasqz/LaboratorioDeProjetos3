@@ -1,3 +1,20 @@
+## 2019-10-01
+- **Papéis**:
+  - Bruna, Verificadora
+  - Matheus, Coordenador
+  - Philippe, Relator
+- **Ações**:
+    - Na aula, definimos a máquina de estados do guindaste e começamos a escrever o relatório da interface gráfica/protocolo de comunicação.
+    - Dividimos em tópicos a estrutura do relatório:
+        - Bruna: responsável pelo tópico da interface gráfica, resumo e introdução
+        - Philippe: responsável pelo tópico do protocolo de comunicação
+        - Matheus: responsável pelo tópico da máquina de estados
+    - Os próximos passos são:
+        - Entrega do relatório;
+        - Avanço SketchUp;
+        - Funcionamento em conjunto dos 3 periféricos;
+
+
 ## 2019-09-24
 - **Papéis**:
   - Bruna, Coordenadora

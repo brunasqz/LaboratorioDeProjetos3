@@ -39,7 +39,7 @@ class Screen(Frame):
         
         self.initBoom(frame1)
 
-        labelJib = Label(frame1, text="Lança")
+        labelJib = Label(frame1, text="Altura eletroimã")
         jib = Entry(frame1)
         incJib = Button(frame1, text="+1cm")
         decJib = Button(frame1, text="-1cm")
@@ -77,7 +77,7 @@ class Screen(Frame):
             self.craneState.setBoomGrades(int(self.boomVar.get()), self.setEntries)
             #self.setEntries()
         
-        labelBoom = Label(frame1, text="Braço")
+        labelBoom = Label(frame1, text="Lança")
         boom = Entry(frame1, textvariable=self.boomVar)
         self.btnApplyBoom = Button(frame1, text="Aplicar", command=applyBoom)
         labelBoom.grid(row=1, column=0)

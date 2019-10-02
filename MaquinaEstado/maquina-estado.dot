@@ -1,0 +1,87 @@
+digraph G {
+
+  rankdir = TD;
+
+  node [shape = circle, width = 1];
+  
+  e0 -> e1;
+  e1 -> e0;
+  
+  e1 -> e2a;
+  e2a -> e1;
+  
+  e1 -> e2b;
+  e2b -> e1;
+  
+  e1 -> e3;
+  e3 -> e1;
+  
+  e3 -> e4a;
+  e4a -> e3;
+  
+  e3 -> e4b;
+  e4b -> e3;
+  
+  e0 [label = "desligado", style=filled, color=gray];
+  e1 [label = "parado"];
+  
+  e2a [label = "lanca", style=filled, color="#ff6961"];
+  e2b [label = "fio", style=filled, color="#add8e6"];
+  
+  e3 [label = "ima", penwidth=3];
+  
+  e4a [label = "lanca\nima", penwidth=3, style=filled, fillcolor="#ff6961"];
+  e4b [label = "fio\nima", penwidth=3, style=filled, fillcolor="#add8e6"];
+  
+  e2a_c [label = "subindo\ndescendo", shape=note, style=filled fillcolor="#ffffa5"];
+  e2a_c -> e2a [dir = none];
+  
+  e2b_c [label = "girando", shape=note, style=filled fillcolor="#ffffa5"];
+  e2b_c -> e2b [dir = none];
+  
+  e4a_c [label = "subindo\ndescendo\nima ligado", shape=note, style=filled fillcolor="#ffffa5"];
+  e4a_c -> e4a [dir = none];
+  
+  e4b_c [label = "girando\nima ligado", shape=note, style=filled fillcolor="#ffffa5"];
+  e4b_c -> e4b [dir = none];
+  
+  /* e1 [label = "Parado", style="filled", fillcolor="gray"];
+  e2 [label = "Braço", color="red"];
+  e3 [label = "Guincho", color="blue"];
+  e4 [label = "Braço\n+ Imã", style="filled" color="red", fillcolor="red1"];
+  e5 [label = "Guincho\n+ Imã", style="filled" color="blue", fillcolor="blue1"];
+  e6 [label = "Imã", style="filled"]; 
+  
+  e1 -> e2;
+  e2 -> e1;
+  
+  e1 -> e3;
+  e3 -> e1;
+  
+  e2 -> e4;
+  e3 -> e5;
+  
+  e4 -> e6;
+  e6 -> e4;
+  
+  e5 -> e6;
+  e6 -> e5;
+  
+  e6 -> e1;
+  e1 -> e6; */
+
+  /* parado [label = "Parado", color = red];
+  bracoEmMovimento [label = "Braço em\nmovimento", color = blue];
+  imaAcionado [label = "Imã\nacionado", color = green];
+  guinchoEmMovimento [label = "Guincho em\nmovimento", color = yellow];
+  
+  parado -> bracoEmMovimento [label = "Aciona\nbraço"];
+  bracoEmMovimento -> parado [label = "Fim do\nmovimento"];
+  
+  parado -> imaAcionado [label = "Liga imã"];
+  imaAcionado -> parado [label = "Desliga imã"];
+  
+  parado -> guinchoEmMovimento [label = "Aciona\nguincho"];
+  guinchoEmMovimento -> parado [label = "Fim do\nmovimento"]; */
+  
+}

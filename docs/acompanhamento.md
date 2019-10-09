@@ -1,3 +1,16 @@
+## 2109-10-08
+  - **Papéis**:
+    - Bruna, Relatora
+    - Matheus, Verificador
+    - Philippe, Coordenador
+  - **Ações**
+    - O guindaste está funcional.
+    - Todos os componentes físicos foram integrados.
+    - Foi utilizada uma interface de teste para comandar o guindaste.
+    - Foram levantadas as correções estruturais do guindaste.
+      - Ao levantar o eletroimã com a moeda acoplada, a lança não fica rígida em função da folga do eixo do motor com a roda
+      - Definição da melhor posição para o motor do fio.
+
 ## 2019-10-01
 - **Papéis**:
   - Bruna, Verificadora

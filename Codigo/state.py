@@ -21,7 +21,7 @@ class CraneState:
             if (action == 'ligar'):
                 self.state = 'parado'
             else:
-                print('erro')
+                return False
         elif (self.state == 'parado'):
             if (action == 'desligar'):
                 self.state = 'desligado'
@@ -32,7 +32,7 @@ class CraneState:
             elif (action == 'ligar-fio'):
                 self.state = 'fio'
             else:
-                print('erro')
+                return False
         elif (self.state == 'ima'):
             if (action == 'desligar-ima'):
                 self.state = 'parado'
@@ -41,60 +41,73 @@ class CraneState:
             elif (action == 'ligar-fio'):
                 self.state = 'fio-ima'
             else:
-                print('erro')
+                return False
         elif (self.state == 'lanca'):
             if (action == 'desligar-lanca'):
                 self.state = 'parado'
             else:
-                print('erro')
+                return False
         elif (self.state == 'lanca-ima'):
             if (action == 'desligar-lanca'):
                 self.state = 'ima'
             else:
-                print('erro')
+                return False
         elif (self.state == 'fio'):
             if (action == 'desligar-fio'):
                 self.state = 'parado'
             else:
-                print('erro')
+                return False
         elif (self.state == 'fio-ima'):
             if (action == 'desligar-fio'):
                 self.state = 'ima'
             else:
-                print('erro')
+                return False
         else:
-            print('erro')
+            return False
+
+        return True
 
     def turnOn(self, callback):
-        self.setState('ligar')
+        if not self.setState('ligar'):
+            print('invalid state')
+            return
         callback()
 
     def turnOff(self, callback):
-        self.setState('desligar')
+        if not self.setState('desligar'):
+            print('invalid state')
+            return
         callback()
 
-    def stop(self):
-        self.state = 'stopped'
-        print(self.state)
-
     def turnOnElectromagnet(self, callback):
+        if not self.setState('ligar-ima'):
+            print('invalid state')
+            return
+
         self.electromagnet = True
-        self.setState('ligar-ima')
         callback()
 
     def turnOffElectromagnet(self, callback):
+
+        if not self.setState('desligar-ima'):
+            print('invalid state')
+            return
+
         self.electromagnet = False
-        self.setState('desligar-ima')
         callback()
 
     def setBoomGrades(self, grades, callback):
+
+        if not self.setState('ligar-lanca'):
+            print('invalid state')
+            return
 
         if (grades < -180 or grades > 180):
             print('invalid grades')
             return
 
         self.boomGrades = grades
-        self.setState('ligar-lanca')
+
         callback()
 
         def finish():
@@ -106,11 +119,13 @@ class CraneState:
 
     def setJibGrades(self, grades, callback):
 
+        if not self.setState('ligar-fio'):
+            print('invalid state')
+            return
+
         if (grades < -180 or grades > 180):
             print('invalid grades')
             return
-
-        self.setState('ligar-fio')
 
         self.jibGrades = grades
         callback()

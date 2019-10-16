@@ -16,7 +16,7 @@ void setup()
   pinMode(magnetPin, OUTPUT);
   Serial.begin(9600);
   stepper1.setSpeed(15);
-  stepper2.setSpeed(80);
+  stepper2.setSpeed(15);
 }
 
 void loop()

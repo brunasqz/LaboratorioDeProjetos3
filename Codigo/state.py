@@ -85,6 +85,7 @@ class CraneState:
             return
 
         self.electromagnet = True
+        self.driver.eletromag(self.electromagnet)
         callback()
 
     def turnOffElectromagnet(self, callback):
@@ -94,6 +95,7 @@ class CraneState:
             return
 
         self.electromagnet = False
+        self.driver.eletromag(self.electromagnet)
         callback()
 
     def setBoomGrades(self, grades, callback):
@@ -107,6 +109,7 @@ class CraneState:
             return
 
         self.boomGrades = grades
+        self.driver.engine1(grades)
 
         callback()
 
@@ -128,6 +131,7 @@ class CraneState:
             return
 
         self.jibGrades = grades
+        self.driver.engine2(grades)
         callback()
 
         def finish():

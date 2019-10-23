@@ -1,3 +1,19 @@
+## 2109-10-22
+  - **Papéis**:
+    - Bruna, Coordenadora
+    - Matheus, Relator
+    - Philippe, Verificador
+  - **Ações**
+    - Continuamos os testes com a estrutura do guindaste para observar as possíveis melhorias;
+    - Foi rastreado o problema em relação ao movimento do eixo: a base não apresenta sustentação suficiente para a lança girar;
+    - Atualizamos o trello para fazer os acompanhamentos do cronograma;
+    - Em relação ao cronograma, definimos que os próximos passos são:
+        - Bruna: fazer outra base mais "firme" para o motor da lança, continuar o SketchUp;
+        - Matheus: ajuste do software em relação à função de conversão de graus para cm e implementar o novo protocolo de comunicação;
+        - Philippe: fios para permitir o movimento da lança;
+
+
+
 ## 2109-10-08
   - **Papéis**:
     - Bruna, Relatora

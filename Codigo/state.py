@@ -120,15 +120,14 @@ class CraneState:
         t = Timer(2.0, finish)
         t.start()
 
-    def setJibGrades(self, grades, callback):
+    def setJibGrades(self, height, callback):
 
         if not self.setState('ligar-fio'):
             print('invalid state')
             return
-
-        if (grades < -180 or grades > 180):
-            print('invalid grades')
-            return
+        
+        # 1cm = 180 grades
+        grades = height * 180
 
         self.jibGrades = grades
         self.driver.engine2(grades)

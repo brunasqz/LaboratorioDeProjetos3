@@ -1,3 +1,17 @@
+## 2019-11-12
+  - **Papéis**:
+    - Bruna, Verificadora
+    - Philippe, Coordenador
+  - **Ações**
+    - Continuamos os testes com a estrutura do guindaste para observar as possíveis melhorias;
+    - Ajeitamos as posições dos drivers e do arduíno para permitir o movimento do guindaste;
+    - Rastreamos a dificuldade no movimento da lança (mal contato do fio);
+    - Tentamos aplicar uma nova versão de código no arduíno, mas não deu certo, então fizemos tentativas com os códigos antigos;
+    - Ficou estabelecido para seguinte semana que:
+      - Avançaremos no relatório;
+      - Modificações no código do arduíno (protocolo de comunicação);
+      - Agilizaremos um fio maior para o eletroímã;
+      - Trazer material para fixar os drivers na estrutura do guindaste; 
 ## 2109-10-22
   - **Papéis**:
     - Bruna, Coordenadora

@@ -126,7 +126,7 @@ class CraneState:
             print('invalid state')
             return
         
-        # 1cm = 180 grades
+        # 1cm = 180 grades ?
         grades = height * 180
 
         self.jibGrades = grades

@@ -127,9 +127,9 @@ class CraneState:
             return
         
         # 1cm = 180 grades ?
-        grades = height * 180
+        grades = height
 
-        self.jibGrades = grades
+        self.jibGrades = height
         self.driver.engine2(grades)
         callback()
 

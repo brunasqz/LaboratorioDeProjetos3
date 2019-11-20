@@ -1,3 +1,13 @@
+## 2019-11-19
+  - **Papéis**:
+    - Bruna, Coordenadora,
+    - Matheus, Relator,
+    - Philippe, Verificador
+  - **Ações**
+    - Houve a continuidade dos testes nno guindaste para validar a estrutura física e o protocolo de comunicação
+    - Tivemos problema de comunicação entre o python e o arduíno, o que tomou tempo na maior parte da aula
+    - Completamos alguns tópicos do relatório final. 
+    - Preparamos para os próximos até a apresentação final.
 ## 2019-11-12
   - **Papéis**:
     - Bruna, Verificadora

@@ -35,5 +35,5 @@ class Driver():
             s = str(chr(3<<1) + chr(1))
             self.arduino.write(s.encode())
         else:
-            s = str(chr(3<<1) + chr(1))
+            s = str(chr(3<<1) + chr(0))
             self.arduino.write(s.encode())        

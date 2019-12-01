@@ -75,7 +75,7 @@ class Screen(Frame):
             self.craneState.setBoomGrades(
                 int(self.boomVar.get()), self.setEntries)
 
-        labelBoom = Label(frame1, text='Lança')
+        labelBoom = Label(frame1, text='Lança +Horário -Antihorário')
         boom = Entry(frame1, textvariable=self.boomVar)
         self.btnApplyBoom = Button(frame1, text='Aplicar', command=applyBoom)
         labelBoom.grid(row=1, column=0)
@@ -88,7 +88,7 @@ class Screen(Frame):
             self.craneState.setJibGrades(
                 int(self.jibVar.get()), self.setEntries)
 
-        labelJib = Label(frame1, text='Altura eletroimã')
+        labelJib = Label(frame1, text='Altura eletroimã (cm)')
         jib = Entry(frame1, textvariable=self.jibVar)
         self.btnApplyJib = Button(frame1, text='Aplicar', command=applyJib)
         labelJib.grid(row=1, column=1)

@@ -4,7 +4,7 @@ import platform
 
 
 class Driver():
-    port = 'com3'  # '/dev/ttyUSB0'
+    port = 'com4'  # '/dev/ttyUSB0'
     speed = 9600
     arduino = None
 

@@ -16,7 +16,7 @@ void setup()
 {
   pinMode(magnetPin, OUTPUT);
   Serial.begin(9600);
-  MotorIca.setSpeed(50);
+  MotorIca.setSpeed(60);
   MotorLanca.setSpeed(15);
 }
 
@@ -58,12 +58,12 @@ void loop()
       }
       else if ((Evento == Subir_DescerIMa)&&(Sentido == SentidoHorario))
       {
-        MotorIca.step(Graus * -180);
+        MotorIca.step(Graus * -95);
         delay(2000);
       }
       else if ((Evento == Subir_DescerIMa)&&(Sentido == SentidoAntihorario))
       {
-        MotorIca.step(Graus * 180);
+        MotorIca.step(Graus * 95);
         delay(2000);
       }
     }

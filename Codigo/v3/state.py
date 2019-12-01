@@ -116,8 +116,10 @@ class CraneState:
         def finish():
             self.setState('desligar-lanca')
             callback()
+            
+        ttw = abs(grades) / 50 * 3
 
-        t = Timer(2.0, finish)
+        t = Timer(ttw, finish)
         t.start()
 
     def setJibGrades(self, height, callback):
@@ -125,7 +127,7 @@ class CraneState:
         if not self.setState('ligar-fio'):
             print('invalid state')
             return
-        
+
         # 1cm = 180 grades ?
         grades = height
 
@@ -137,5 +139,7 @@ class CraneState:
             self.setState('desligar-fio')
             callback()
 
-        t = Timer(2.0, finish)
+        ttw = abs(height)*2
+
+        t = Timer(ttw, finish)
         t.start()
